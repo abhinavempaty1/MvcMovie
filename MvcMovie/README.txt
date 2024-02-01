@@ -144,11 +144,19 @@ creating a new field R was coming errors.
 
 solution:
 
-Actually i did not build the commands, but again i started from staring 8 step, so i got rating field in it.
+
+Navigated to the relevant model class within the project. 
+Added a new property to the class with the appropriate data type:
+Added a new property in the model class, specifying the appropriate data type for the desired field.
+Opened the data context class to add a new DbSet for the new property:
+Accessed the data context class that is associated with the model and incorporated a new DbSet for the newly
+added property.Actually i did not build the commands, but again i started from staring 8 step, so i got rating field in it.
 
 Step 9:
-
-challenges:
-
-was able to run create page.
+Executed the migration to update the database with the new field.
+Executed a migration to apply the changes to the database, ensuring synchronization with the updated model.
+Updated the views and controllers to handle the new field.Modified the views and controllers that involve the model
+to accommodate the new field, ensuring proper handling and integration into the application's user interface and
+functionality.
+Was able to run create page.
 But cloning to git was having few errors.
