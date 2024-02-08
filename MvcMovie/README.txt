@@ -25,12 +25,12 @@ Add a controller to an ASP.NET Core MVC application.
 Problems:
 How to name the controller class and the methods inside it?
 How to use the scaffolding feature to generate a controller template?
-How to specify the routing logic that maps the URL to the controller action?
+
 
 Solution**:
-The controller class should be named with the suffix "Controller", such as "HelloWorldController". The methods inside the controller class are called action methods, and they should have descriptive names that indicate their functionality, such as "Index" or "Welcome".
-To use the scaffolding feature, right-click the Controllers folder in the Solution Explorer and select Add > New Scaffolded Item. Then, select MVC Controller - Empty and click Add. Enter the name of the controller class and click Add again. This will create a controller file with the basic code structure and a corresponding view folder.
-To specify the routing logic, use the [Route] attribute on the controller class or the action methods. The [Route] attribute takes a parameter that defines the URL pattern that matches the controller or the action. For example, [Route("HelloWorld")] on the controller class means that any URL that starts with "HelloWorld" will be handled by this controller. [Route("Welcome")] on the action method means that the URL "HelloWorld/Welcome" will invoke this action.
+
+The controllers was able to add by following the instructions.
+I was able to use scaffolding feature only after i stopped the running output.
 
 Step 3:
 
@@ -50,7 +50,7 @@ Solutions:
 5. Select Razor View - Empty and keep the default name Index.cshtml.
 6. Replace the contents of the Views/HelloWorld/Index.cshtml 
 
-***********************************************************************************
+********************************************************************************************************************
 
 LAB 2
 
@@ -79,11 +79,7 @@ Work with a database in an ASP.NET Core MVC app
 
 Challenges:
 
-As I Delete all the records in the database. 
-You can do this with the delete links in the browser or from SSOX.
-Test the app. Force the app to initialize, calling the code in the Program.cs file,
-so the seed method runs. To force initialization, close the command prompt window that 
-Visual Studio opened, and restart by pressing Ctrl+F5.
+The main task was the table of movies.
 
 Solution:
 
@@ -116,7 +112,7 @@ Migrations:
 
 20240125052346_InitialCreate.cs
 
-*******************************************************************************************
+**********************************************************************************************************************
 
 LAB 3
 
@@ -131,10 +127,11 @@ i was able to work on search command but initially i was not able to run it.
 
 Solution:
 
-I was doing the task by imagine that you want to bookmark a particular search or you want to send
-a link to friends that they can click in order to see the same filtered list of movies. Notice that 
-the URL for the HTTP POST request is the same as the URL for the GET request (localhost:{PORT}/Movies/Index) 
--- there's no search information in the URL. 
+The solution information given in the document mentioned that you might not get the output untill you have done the 
+next step.
+so going to do the step 8.
+
+And even the time constrains as playing a major role.
 
 Step 8:
 
@@ -145,18 +142,47 @@ creating a new field R was coming errors.
 solution:
 
 
-Navigated to the relevant model class within the project. 
-Added a new property to the class with the appropriate data type:
-Added a new property in the model class, specifying the appropriate data type for the desired field.
-Opened the data context class to add a new DbSet for the new property:
-Accessed the data context class that is associated with the model and incorporated a new DbSet for the newly
-added property.Actually i did not build the commands, but again i started from staring 8 step, so i got rating field in it.
+Navigated to the relevant model class within the project and again went through whole code.
+line by line i crosschecked and made sure there are no errors.
+again build it and after running i was able to see the output (R).
 
 Step 9:
+
+Add validation to an ASP.NET Core MVC app
+
+comments:
+
+This step was actually very much complex codes but initially as i mentioned early what i learned was to build the program
+after every step you do.
+And even if you are doing any changes make sure to close the output webpage.
 Executed the migration to update the database with the new field.
-Executed a migration to apply the changes to the database, ensuring synchronization with the updated model.
-Updated the views and controllers to handle the new field.Modified the views and controllers that involve the model
-to accommodate the new field, ensuring proper handling and integration into the application's user interface and
-functionality.
 Was able to run create page.
 But cloning to git was having few errors.
+
+additional comments:
+
+the internet is buffering as i run the program. but made sure that the file is saved in every step. after some time i 
+was able to see the output.
+
+*******************************************************************************************************************************
+
+Lab 4
+
+Date - 2024-02-08
+Time - 0815
+
+Step 10
+
+I see that this step is to examine our program files and all the codes.
+
+Learned to push all the commits to the GIT and was able to puch successfully.
+
+comments:
+
+Few things i found interesting was, firstly i was able to complete the lab and was happy to have my webpage yet it is
+on the local host.
+
+The journey of these 4 weeks was amazing, having errors, learning new things all the time, learned about ASP.net and GIT.
+
+I know that this is lab is initial stage, waiting to do more wonders with this visual studios.
+
